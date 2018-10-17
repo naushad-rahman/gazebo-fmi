@@ -6,6 +6,8 @@
 # https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 # at your option.
 
+add_compile_options(-std=c++11)
+
 set(GazeboFMIPrivateUtils_HDR
     include/gazebo_fmi/FMUCoSimulation.hh
     include/gazebo_fmi/SDFConfigurationParsing.hh

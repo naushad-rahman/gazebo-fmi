@@ -6,6 +6,8 @@
 # https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 # at your option.
 
+add_compile_options(-std=c++11)
+
 add_library(FMIActuatorPlugin SHARED FMIActuatorPlugin.hh FMIActuatorPlugin.cc)
 target_include_directories(FMIActuatorPlugin SYSTEM PUBLIC ${GAZEBO_INCLUDE_DIRS})
 target_link_libraries(FMIActuatorPlugin PUBLIC ${GAZEBO_LIBRARIES})
