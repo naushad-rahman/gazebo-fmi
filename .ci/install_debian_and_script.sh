@@ -22,7 +22,7 @@ apt-get update
 export DEBIAN_FRONTEND=noninteractive
 
 # CI specific packages
-apt-get install -y clang git
+apt-get install -y cmake clang git
 
 # Dependencies
 apt-get install -y lib${GAZEBO_VERSION}-dev openmodelica
